@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AC64650A26726A1A0035A375 /* CodableDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64650926726A1A0035A375 /* CodableDemoApp.swift */; };
-		AC64650C26726A1A0035A375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64650B26726A1A0035A375 /* ContentView.swift */; };
+		AC64650C26726A1A0035A375 /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64650B26726A1A0035A375 /* CodableView.swift */; };
 		AC64650E26726A1B0035A375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC64650D26726A1B0035A375 /* Assets.xcassets */; };
 		AC64651126726A1B0035A375 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC64651026726A1B0035A375 /* Preview Assets.xcassets */; };
+		AC64651B26726ADA0035A375 /* CodableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64651A26726ADA0035A375 /* CodableViewModel.swift */; };
+		AC64651F26726B580035A375 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64651E26726B580035A375 /* CustomerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC64650626726A1A0035A375 /* CodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC64650926726A1A0035A375 /* CodableDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDemoApp.swift; sourceTree = "<group>"; };
-		AC64650B26726A1A0035A375 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC64650B26726A1A0035A375 /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
 		AC64650D26726A1B0035A375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC64651026726A1B0035A375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC64651226726A1B0035A375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC64651A26726ADA0035A375 /* CodableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableViewModel.swift; sourceTree = "<group>"; };
+		AC64651E26726B580035A375 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				AC64650926726A1A0035A375 /* CodableDemoApp.swift */,
-				AC64650B26726A1A0035A375 /* ContentView.swift */,
+				AC64651C26726B360035A375 /* Models */,
+				AC64651826726ABC0035A375 /* Views */,
+				AC64651926726AC10035A375 /* ViewModels */,
 				AC64650D26726A1B0035A375 /* Assets.xcassets */,
 				AC64651226726A1B0035A375 /* Info.plist */,
 				AC64650F26726A1B0035A375 /* Preview Content */,
@@ -67,6 +73,30 @@
 				AC64651026726A1B0035A375 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC64651826726ABC0035A375 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC64650B26726A1A0035A375 /* CodableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC64651926726AC10035A375 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AC64651A26726ADA0035A375 /* CodableViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AC64651C26726B360035A375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC64651E26726B580035A375 /* CustomerModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC64650C26726A1A0035A375 /* ContentView.swift in Sources */,
+				AC64651B26726ADA0035A375 /* CodableViewModel.swift in Sources */,
+				AC64651F26726B580035A375 /* CustomerModel.swift in Sources */,
+				AC64650C26726A1A0035A375 /* CodableView.swift in Sources */,
 				AC64650A26726A1A0035A375 /* CodableDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
